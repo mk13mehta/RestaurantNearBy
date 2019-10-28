@@ -28,40 +28,29 @@
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<app-navigation-bar></app-navigation-bar>\n<router-outlet></router-outlet>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"toolbar \" role=\"banner\" style=\"background-color: blue\">\n    <img\n      width=\"40\"\n      alt=\"Angular Logo\"\n      src=\"assets/image/logo.png\"\n    />\n    <span style=\"align-content: center\">NearBy Restaurants</span>\n      <div class=\"spacer\"></div>\n   \n  </div>\n<router-outlet></router-outlet>");
             /***/ 
         }),
-        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/navigation-bar/navigation-bar.component.html": 
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/restaurant-details/profile-page.component.html": 
+        /*!******************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/restaurant-details/profile-page.component.html ***!
+          \******************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("  <div class=\"container\">\n\n<h1>Place Details</h1>\n<div class=\"row\" *ngIf=\"restaurant\">\n    <img class=\"col-lg-4 col-md-5 col-sm-12 col-24\" src=\"{{ restaurant.photos? photo(restaurant.photos[0].photo_reference) : 'data:image/png;base64,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'}}\">\n    <!-- <img alt=\"\" class=\"col-lg-4 col-md-5 col-sm-12 col-12\" src=\"/assets/rest_img.jpg\"/> -->\n    <div class=\"media-body\">\n        <h4 class=\"mt-0 mb-1\">{{ restaurant.name }}</h4>\n        <h5 class=\"mt-0 mb-1\">{{ restaurant.formatted_phone_number }}</h5>\n        <span *ngIf=\"restaurant.rating\">rating: {{ restaurant.rating }}<br /></span>\n    </div>\n</div>\n</div>\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/restaurant-search/search-page.component.html": 
         /*!****************************************************************************************************!*\
-          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/navigation-bar/navigation-bar.component.html ***!
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/restaurant-search/search-page.component.html ***!
           \****************************************************************************************************/
         /*! exports provided: default */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<!-- Toolbar -->\n<div class=\"toolbar\" role=\"banner\">\n    <img\n      width=\"40\"\n      alt=\"Angular Logo\"\n      src=\"data:image/logo.png\"\n    />\n    <span style=\"align-content: center\">Restaurants Near Me</span>\n      <div class=\"spacer\"></div>\n   \n  </div>\n");
-            /***/ 
-        }),
-        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/profile-page/profile-page.component.html": 
-        /*!************************************************************************************************!*\
-          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/profile-page/profile-page.component.html ***!
-          \************************************************************************************************/
-        /*! exports provided: default */
-        /***/ (function (module, __webpack_exports__, __webpack_require__) {
-            "use strict";
-            __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>profile-page works!</p>\n");
-            /***/ 
-        }),
-        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/search-page/search-page.component.html": 
-        /*!**********************************************************************************************!*\
-          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/search-page/search-page.component.html ***!
-          \**********************************************************************************************/
-        /*! exports provided: default */
-        /***/ (function (module, __webpack_exports__, __webpack_require__) {
-            "use strict";
-            __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("<p>search-page works!</p>\n<form action=\"\" (ngSubmit)=\"searchNow()\">\n    <input type=\"text\" name=\"searchValue\" [(ngModel)]=searchValue>\n    {{searchValue}}\n    <input type=\"submit\" value=\"search\">\n\n</form>");
+            /* harmony default export */ __webpack_exports__["default"] = ("<br>\n<form action=\"\" (ngSubmit)=\"searchNow()\">\n    <input type=\"text\" name=\"searchValue\" [(ngModel)]=searchValue>\n    <input type=\"submit\" value=\"search\">\n</form>\n    <!-- <div *ngFor=\"let item of data | keyvalue\">\n        {{item.key}}\n        <div *ngFor=\"let obj of item.value | keyvalue\">\n            <div *ngIf=\"obj.key=='place_id'\">\n                <div restaurantId=obj.value >\n                    <button (click)=\"saveId(obj.value)\">\n                        Id:{{obj.value}}\n                    </button>\n                </div>\n            </div>\n            \n            <div *ngIf=\"obj.key=='photos'\">\n                <img src=\"{{photo(obj.value[0].photo_reference)}}\" style= \"width: 200px;\">  \n                <img src=\"'https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyBMh4S3Es4U2U7AAelpPXCyg0XyHCKc_7Y&maxwidth=400&photoreference='+obj.value[0].photo_reference\">\n                <img src=\"{{ photo(item.photos[0].photo_reference) }}\" class=\"card-img-top\" alt=\"...\">\n                </div>\n            <div *ngIf=\"obj.key == 'name'\">\n                <a>{{obj.value}}</a>\n            </div>\n        </div>\n    </div> -->\n\n    <div class=\"card\" style=\"width: 18rem;\" *ngFor=\"let place of data\">\n        <img src=\"{{ place.photos? photo(place.photos[0].photo_reference) : 'data:image/png;base64,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'}}\" class=\"card-img-top\" alt=\"...\">\n        <div class=\"card-body\">\n              <h5 class=\"card-title\">{{ place.name }}</h5>\n              <h5 class=\"card-title\">{{ place.id }}</h5>\n            <a [routerLink]=\"['./detail/', place.place_id]\" class=\"btn btn-primary\">\n                View Details\n            </a>\n        </div>\n    </div>\n    ");
             /***/ 
         }),
         /***/ "./node_modules/tslib/tslib.es6.js": 
@@ -377,12 +366,12 @@
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
             /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-            /* harmony import */ var _search_page_search_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../search-page/search-page.component */ "./src/app/search-page/search-page.component.ts");
-            /* harmony import */ var _profile_page_profile_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../profile-page/profile-page.component */ "./src/app/profile-page/profile-page.component.ts");
+            /* harmony import */ var _restaurant_search_search_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../restaurant-search/search-page.component */ "./src/app/restaurant-search/search-page.component.ts");
+            /* harmony import */ var _restaurant_details_profile_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../restaurant-details/profile-page.component */ "./src/app/restaurant-details/profile-page.component.ts");
             var routes = [
-                { path: '', component: _search_page_search_page_component__WEBPACK_IMPORTED_MODULE_4__["SearchPageComponent"] },
-                { path: 'search', component: _search_page_search_page_component__WEBPACK_IMPORTED_MODULE_4__["SearchPageComponent"] },
-                { path: 'profile-page/:id', component: _profile_page_profile_page_component__WEBPACK_IMPORTED_MODULE_5__["ProfilePageComponent"] }
+                { path: '', component: _restaurant_search_search_page_component__WEBPACK_IMPORTED_MODULE_4__["SearchPageComponent"] },
+                { path: 'search', component: _restaurant_search_search_page_component__WEBPACK_IMPORTED_MODULE_4__["SearchPageComponent"] },
+                { path: 'detail/:id', component: _restaurant_details_profile_page_component__WEBPACK_IMPORTED_MODULE_5__["ProfilePageComponent"] }
             ];
             var AppRoutingModule = /** @class */ (function () {
                 function AppRoutingModule() {
@@ -448,12 +437,11 @@
             /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
             /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-            /* harmony import */ var _search_page_search_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search-page/search-page.component */ "./src/app/search-page/search-page.component.ts");
-            /* harmony import */ var _profile_page_profile_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./profile-page/profile-page.component */ "./src/app/profile-page/profile-page.component.ts");
-            /* harmony import */ var _navigation_bar_navigation_bar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./navigation-bar/navigation-bar.component */ "./src/app/navigation-bar/navigation-bar.component.ts");
-            /* harmony import */ var _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing/app-routing.module */ "./src/app/app-routing/app-routing.module.ts");
-            /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+            /* harmony import */ var _restaurant_search_search_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./restaurant-search/search-page.component */ "./src/app/restaurant-search/search-page.component.ts");
+            /* harmony import */ var _restaurant_details_profile_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./restaurant-details/profile-page.component */ "./src/app/restaurant-details/profile-page.component.ts");
+            /* harmony import */ var _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing/app-routing.module */ "./src/app/app-routing/app-routing.module.ts");
+            /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
             var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
@@ -463,15 +451,14 @@
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
                     declarations: [
                         _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-                        _search_page_search_page_component__WEBPACK_IMPORTED_MODULE_4__["SearchPageComponent"],
-                        _profile_page_profile_page_component__WEBPACK_IMPORTED_MODULE_5__["ProfilePageComponent"],
-                        _navigation_bar_navigation_bar_component__WEBPACK_IMPORTED_MODULE_6__["NavigationBarComponent"],
+                        _restaurant_search_search_page_component__WEBPACK_IMPORTED_MODULE_4__["SearchPageComponent"],
+                        _restaurant_details_profile_page_component__WEBPACK_IMPORTED_MODULE_5__["ProfilePageComponent"],
                     ],
                     imports: [
                         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                        _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
-                        _angular_common_http__WEBPACK_IMPORTED_MODULE_8__["HttpClientModule"],
-                        _angular_forms__WEBPACK_IMPORTED_MODULE_9__["FormsModule"]
+                        _app_routing_app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+                        _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"]
                     ],
                     providers: [],
                     bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -479,59 +466,74 @@
             ], AppModule);
             /***/ 
         }),
-        /***/ "./src/app/navigation-bar/navigation-bar.component.css": 
-        /*!*************************************************************!*\
-          !*** ./src/app/navigation-bar/navigation-bar.component.css ***!
-          \*************************************************************/
-        /*! exports provided: default */
+        /***/ "./src/app/get-restaurants.service.ts": 
+        /*!********************************************!*\
+          !*** ./src/app/get-restaurants.service.ts ***!
+          \********************************************/
+        /*! exports provided: GetRestaurantsService */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = (".toolbar {\n    height: 60px;\n    margin: -8px;\n    display: flex;\n    align-items: center;\n    background-color: #1976d2;\n    color: white;\n    font-weight: 600;\n}\n\n.toolbar img {\n    margin: 0 16px;\n}\n\n.toolbar #twitter-logo {\n    height: 40px;\n    margin: 0 16px;\n}\n\n.toolbar #twitter-logo:hover {\n    opacity: 0.8;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2aWdhdGlvbi1iYXIvbmF2aWdhdGlvbi1iYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osY0FBYztBQUNsQjs7QUFFRTtJQUNFLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9uYXZpZ2F0aW9uLWJhci9uYXZpZ2F0aW9uLWJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRvb2xiYXIge1xuICAgIGhlaWdodDogNjBweDtcbiAgICBtYXJnaW46IC04cHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMxOTc2ZDI7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG59XG5cbi50b29sYmFyIGltZyB7XG4gICAgbWFyZ2luOiAwIDE2cHg7XG59XG5cbi50b29sYmFyICN0d2l0dGVyLWxvZ28ge1xuICAgIGhlaWdodDogNDBweDtcbiAgICBtYXJnaW46IDAgMTZweDtcbn1cblxuICAudG9vbGJhciAjdHdpdHRlci1sb2dvOmhvdmVyIHtcbiAgICBvcGFjaXR5OiAwLjg7XG59Il19 */");
-            /***/ 
-        }),
-        /***/ "./src/app/navigation-bar/navigation-bar.component.ts": 
-        /*!************************************************************!*\
-          !*** ./src/app/navigation-bar/navigation-bar.component.ts ***!
-          \************************************************************/
-        /*! exports provided: NavigationBarComponent */
-        /***/ (function (module, __webpack_exports__, __webpack_require__) {
-            "use strict";
-            __webpack_require__.r(__webpack_exports__);
-            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationBarComponent", function () { return NavigationBarComponent; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GetRestaurantsService", function () { return GetRestaurantsService; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-            var NavigationBarComponent = /** @class */ (function () {
-                function NavigationBarComponent() {
+            /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+            var GetRestaurantsService = /** @class */ (function () {
+                function GetRestaurantsService(httpClient) {
+                    this.httpClient = httpClient;
+                    this.API_KEY = "e06f5b3da2be4501af757078cf03a985";
                 }
-                NavigationBarComponent.prototype.ngOnInit = function () {
+                // public getPlaces(){
+                //   return this.httpClient.get<Config>("http://localhost:3000/api/places");
+                // }
+                GetRestaurantsService.prototype.getSearchPlaces = function (searchValue) {
+                    console.log("SearchValue FROM my Service", searchValue);
+                    var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpParams"]();
+                    params = params.append('searchValue', searchValue);
+                    return this.httpClient.get("http://localhost:3000/api/search/places", { params: params });
                 };
-                return NavigationBarComponent;
+                GetRestaurantsService.prototype.getPlacesId = function (id) {
+                    console.log("id", id);
+                    var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpParams"]();
+                    params = params.append('id', id);
+                    return this.httpClient.get("http://localhost:3000/api/places/id", { params: params });
+                };
+                // getPhotoURL(photoReference: string) {
+                //   let params = new HttpParams();
+                //   params = params.append('photoReference', photoReference );    
+                //   return this.httpClient.get<Config>("http://localhost:3000/api/places/photo",{params: params})
+                // }
+                GetRestaurantsService.prototype.getPhotoURL = function (photoReference) {
+                    var googlePLacesQueryPhoto = "https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyD9hXB9V0RBr0fqbnZHdDM0fsOQmB-XpQQ&maxwidth=400&photoreference=" + photoReference;
+                    return googlePLacesQueryPhoto;
+                };
+                return GetRestaurantsService;
             }());
-            NavigationBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-                    selector: 'app-navigation-bar',
-                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./navigation-bar.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/navigation-bar/navigation-bar.component.html")).default,
-                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./navigation-bar.component.css */ "./src/app/navigation-bar/navigation-bar.component.css")).default]
+            GetRestaurantsService.ctorParameters = function () { return [
+                { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+            ]; };
+            GetRestaurantsService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
                 })
-            ], NavigationBarComponent);
+            ], GetRestaurantsService);
             /***/ 
         }),
-        /***/ "./src/app/profile-page/profile-page.component.css": 
-        /*!*********************************************************!*\
-          !*** ./src/app/profile-page/profile-page.component.css ***!
-          \*********************************************************/
+        /***/ "./src/app/restaurant-details/profile-page.component.css": 
+        /*!***************************************************************!*\
+          !*** ./src/app/restaurant-details/profile-page.component.css ***!
+          \***************************************************************/
         /*! exports provided: default */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2ZpbGUtcGFnZS9wcm9maWxlLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */");
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jlc3RhdXJhbnQtZGV0YWlscy9wcm9maWxlLXBhZ2UuY29tcG9uZW50LmNzcyJ9 */");
             /***/ 
         }),
-        /***/ "./src/app/profile-page/profile-page.component.ts": 
-        /*!********************************************************!*\
-          !*** ./src/app/profile-page/profile-page.component.ts ***!
-          \********************************************************/
+        /***/ "./src/app/restaurant-details/profile-page.component.ts": 
+        /*!**************************************************************!*\
+          !*** ./src/app/restaurant-details/profile-page.component.ts ***!
+          \**************************************************************/
         /*! exports provided: ProfilePageComponent */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
@@ -539,37 +541,57 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilePageComponent", function () { return ProfilePageComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var _get_restaurants_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../get-restaurants.service */ "./src/app/get-restaurants.service.ts");
             var ProfilePageComponent = /** @class */ (function () {
-                function ProfilePageComponent() {
+                function ProfilePageComponent(route, getRestaurantsService) {
+                    this.route = route;
+                    this.getRestaurantsService = getRestaurantsService;
                 }
                 ProfilePageComponent.prototype.ngOnInit = function () {
+                    var _this = this;
+                    this.id = this.route.snapshot.paramMap.get('id');
+                    this.getRestaurantsService.getPlacesId(this.id).subscribe(function (res) {
+                        console.log("Result here", res);
+                        _this.restaurant = res.result;
+                    });
+                    console.log("done with places");
+                };
+                ProfilePageComponent.prototype.photo = function (ref) {
+                    var printit = this.getRestaurantsService.getPhotoURL(ref);
+                    console.log("Restaurant profile here..!!", printit);
+                    return printit;
                 };
                 return ProfilePageComponent;
             }());
+            ProfilePageComponent.ctorParameters = function () { return [
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+                { type: _get_restaurants_service__WEBPACK_IMPORTED_MODULE_3__["GetRestaurantsService"] }
+            ]; };
             ProfilePageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-profile-page',
-                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./profile-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/profile-page/profile-page.component.html")).default,
-                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./profile-page.component.css */ "./src/app/profile-page/profile-page.component.css")).default]
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./profile-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/restaurant-details/profile-page.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./profile-page.component.css */ "./src/app/restaurant-details/profile-page.component.css")).default]
                 })
             ], ProfilePageComponent);
             /***/ 
         }),
-        /***/ "./src/app/search-page/search-page.component.css": 
-        /*!*******************************************************!*\
-          !*** ./src/app/search-page/search-page.component.css ***!
-          \*******************************************************/
+        /***/ "./src/app/restaurant-search/search-page.component.css": 
+        /*!*************************************************************!*\
+          !*** ./src/app/restaurant-search/search-page.component.css ***!
+          \*************************************************************/
         /*! exports provided: default */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
             __webpack_require__.r(__webpack_exports__);
-            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NlYXJjaC1wYWdlL3NlYXJjaC1wYWdlLmNvbXBvbmVudC5jc3MifQ== */");
+            /* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Jlc3RhdXJhbnQtc2VhcmNoL3NlYXJjaC1wYWdlLmNvbXBvbmVudC5jc3MifQ== */");
             /***/ 
         }),
-        /***/ "./src/app/search-page/search-page.component.ts": 
-        /*!******************************************************!*\
-          !*** ./src/app/search-page/search-page.component.ts ***!
-          \******************************************************/
+        /***/ "./src/app/restaurant-search/search-page.component.ts": 
+        /*!************************************************************!*\
+          !*** ./src/app/restaurant-search/search-page.component.ts ***!
+          \************************************************************/
         /*! exports provided: SearchPageComponent */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
             "use strict";
@@ -577,22 +599,38 @@
             /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageComponent", function () { return SearchPageComponent; });
             /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
             /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _get_restaurants_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../get-restaurants.service */ "./src/app/get-restaurants.service.ts");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
             var SearchPageComponent = /** @class */ (function () {
-                function SearchPageComponent() {
+                function SearchPageComponent(getRestaurantsService, router) {
+                    this.getRestaurantsService = getRestaurantsService;
+                    this.router = router;
                     this.searchValue = "";
                 }
                 SearchPageComponent.prototype.ngOnInit = function () {
                 };
                 SearchPageComponent.prototype.searchNow = function () {
-                    console.log(this.searchValue);
+                    var _this = this;
+                    this.getRestaurantsService.getSearchPlaces(this.searchValue).subscribe(function (result) {
+                        _this.data = result.results;
+                    });
+                };
+                SearchPageComponent.prototype.photo = function (ref) {
+                    var printit = this.getRestaurantsService.getPhotoURL(ref);
+                    console.log("Search Page", printit);
+                    return printit;
                 };
                 return SearchPageComponent;
             }());
+            SearchPageComponent.ctorParameters = function () { return [
+                { type: _get_restaurants_service__WEBPACK_IMPORTED_MODULE_2__["GetRestaurantsService"] },
+                { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
+            ]; };
             SearchPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
                     selector: 'app-search-page',
-                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./search-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/search-page/search-page.component.html")).default,
-                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./search-page.component.css */ "./src/app/search-page/search-page.component.css")).default]
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./search-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/restaurant-search/search-page.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./search-page.component.css */ "./src/app/restaurant-search/search-page.component.css")).default]
                 })
             ], SearchPageComponent);
             /***/ 
@@ -649,7 +687,7 @@
           \***************************/
         /*! no static exports found */
         /***/ (function (module, exports, __webpack_require__) {
-            module.exports = __webpack_require__(/*! /home/pankti/Dev/Restaurants-near-me/src/main.ts */ "./src/main.ts");
+            module.exports = __webpack_require__(/*! /home/manan/Restaurants-near-me/src/main.ts */ "./src/main.ts");
             /***/ 
         })
     }, [[0, "runtime", "vendor"]]]);
